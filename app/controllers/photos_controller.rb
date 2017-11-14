@@ -12,7 +12,7 @@ class PhotosController < ApplicationController
   if @photo.save
   redirect_to photos_url
 else
-	render action: :new
+	render action => :new
 end
 end
 
@@ -30,7 +30,7 @@ def update
 if @photo.update_attributes(photo_params)
 	redirect_to photo_path(@photo)
 else
-	render :edit
+	render :action => :edit
 end
 end
 

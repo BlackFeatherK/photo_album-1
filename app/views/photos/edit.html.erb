@@ -14,3 +14,11 @@ YOU can edit photo here
 
   <%= f.submit "Update" %>
 <% end %>
+
+<% if @photo.errors.present? %>
+  <ul>
+    <% @photo.errors.each do |error, message| %>
+      <li> <%= "#{error.capitalize}  #{message}" %></li>
+    <% end %>
+  </ul>
+<% end %>
