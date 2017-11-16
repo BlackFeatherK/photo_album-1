@@ -4,7 +4,7 @@ This is show
 <p><%= @photo.description %></p>
 <p><%= @photo.date %></p>
 
-<img src="/public/my-photo/family-outing-20141113.jpg" alt="@photo.file_location"> 
+<img src="<%= @photo.file_location %>" alt="@photo.file_location"> 
 
-<%= link_to 'Edit', edit_photo_path(photo) %>
+<%= link_to 'Edit', edit_photo_path(@photo) %>
 <%= link_to 'Back to index', photos_path %>
