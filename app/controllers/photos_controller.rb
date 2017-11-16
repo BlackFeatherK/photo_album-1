@@ -12,9 +12,9 @@ class PhotosController < ApplicationController
   def create
   	@photo =Photo.new(photo_params)
   if @photo.save
-  redirect_to :action => :index
+  redirect_to photos_url
 else
-	render :action => :new
+	render :new
 end
 end
 
