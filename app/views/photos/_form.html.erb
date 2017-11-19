@@ -5,10 +5,10 @@
     <% end %>
   </ul>
 <% end %>
-
+<div class="form containe">
 <%= form_for @photo do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, class: "form-control" %>
 
   <%= f.label :date %>
   <%= f.text_field :date %>
@@ -21,3 +21,4 @@
 
   <%= f.submit %>
 <% end %>
+</div>
