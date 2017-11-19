@@ -1,7 +1,4 @@
 class Photo < ApplicationRecord
-<<<<<<< HEAD
-
-	
-=======
->>>>>>> 4f4d4a575f2ff769f8fa061a46d2a25b64c7a43f
+  mount_uploader :file_location, PhotoImageUploader  
+  validates_presence_of :title, :date, :description, :file_location   
 end
