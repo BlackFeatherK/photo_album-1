@@ -3,7 +3,7 @@ This is show
 <p><%= @photo.title %></p>
 <p><%= @photo.description %></p>
 <p><%= @photo.date %></p>
-<%= image_tag @photo.file_location.url %>
+
 <%= simple_format(@photo.description) %>
 
 <img src="<%= @photo.file_location %>" alt="@photo.file_location"> 
